@@ -95,15 +95,12 @@ def main():
     if hours >= 8:
         print("Now is %-2d" % hours)
         print("I'm awake, but bored......")
-        print("Happiness: ", happiness)
-        print("Hungry: ", hungry)
-        print("Health: ", health)
     else:
         print("Now is %-2d" % hours)
         print("I'm sleeping......")
-        print("Happiness: ", happiness)
-        print("Hungry: ", hungry)
-        print("Health: ", health)
+    print("Happiness: ", happiness)
+    print("Hunger: ", hungry)
+    print("Health: ", health)
     file.close()
     fun_timer()
     while True:
@@ -126,7 +123,7 @@ def main():
             else:
                 print(str(status_list[0]) + "......")
             print("Happiness: ", happiness)
-            print("Hungry: ", hungry)
+            print("Hunger: ", hungry)
             print("Health: ", health)
         elif command == "letalone":
             status_list[0] = "letalone"
